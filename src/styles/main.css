@@ -1,0 +1,108 @@
+// Stiziles
+html, body {
+  background: white;
+}
+
+.splash {
+  background-color: #333;
+  color: #e6e6e6;
+  font-size: 30px;
+  padding: 100px 5px;
+  text-align: center;
+  font-weight: lighter;
+  height: 1280px;
+}
+
+.splash img {
+  width: 400px;
+}
+
+.splash .title {
+  margin-top: -25px;
+}
+
+.splash .loading {
+  font-size: 20px;
+  margin-left: -43px;
+  opacity: .5;
+  margin-top: 10px;
+}
+
+.appointments {
+  padding: 30px 10px;
+  color: #333;
+  border-top: solid 1px #fff;
+}
+
+.appointments .header {
+  font-size: 40px;
+  padding: 0 0 20px 20px;
+  margin-bottom: 20px;
+}
+
+.appointments .appointment-header > div {
+  display: inline-block;
+}
+
+.appointments .appointment-header {
+    font-weight: bold;
+    height: 30px;
+    border-bottom: solid 2px #CCC;
+}
+
+.appointments .row {
+  padding: 10px 0;
+  cursor: pointer;
+  display: inline-block;
+  border-bottom: solid 2px #CCC;
+  width: 100%;
+}
+
+.appointments .row > div, .appointments .row > img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.appointments .table .pic {
+  width: 15%;
+}
+
+.appointments .row .pic-holder {
+  width: 15%;
+  text-align: center;
+}
+
+.appointments .row .pic {
+  border-radius: 50px;
+  width: 70px;
+}
+
+.appointments .table .name-dob {
+  width: 30%;
+}
+
+.appointments .table .name-dob .name {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.appointments .table .name-dob .dob {
+
+}
+
+.appointments .table .doctor {
+  width: 30%;
+}
+
+.appointments .table .appointment-time {
+  width: 25%;
+}
+
+.appointments .row.selected {
+  color: red;
+}
+
+.appointments .row:hover {
+  color: #58c9e9;
+}
