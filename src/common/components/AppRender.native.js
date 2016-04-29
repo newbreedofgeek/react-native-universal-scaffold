@@ -1,6 +1,5 @@
 'use strict';
 
-import Splash from './Splash';
 import Appointments from './Appointments';
 
 import React, {
@@ -10,11 +9,9 @@ import React, {
 } from 'react-native';
 
 export default function (props, state) {
-  var ActiveView = state.activeViewState === 1 ? Appointments : Splash;
-
   return (
       <View style={styles.container}>
-        <ActiveView />
+        <Appointments />
       </View>
   );
 }

@@ -22,10 +22,6 @@ class App extends Component {
 
   componentDidMount() {
     ClinicStore.addChangeListener(this._onChange);
-
-    setTimeout(function() {
-        ClinicActions.updateActiveScreen();
-    }, 3000);
   }
 
   componentWillUnmount() {

@@ -1,7 +1,7 @@
 {
-  "name": "ClinicApp",
-  "version": "0.0.1",
-  "description": "The Life Letters Clinic App",
+  "name": "React Native Universal Scaffold",
+  "version": "0.0.2",
+  "description": "A React Native Starter Kit for Web + iOS + Android App Development. ",
   "author": "@newbreedofgeek (http://github.com/newbreedofgeek)",
   "license": "",
   "repository": {

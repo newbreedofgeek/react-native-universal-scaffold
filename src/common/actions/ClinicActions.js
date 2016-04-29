@@ -4,12 +4,7 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 import ClinicConstants from '../constants/ClinicConstants';
 
 var ClinicActions = {
-  updateActiveScreen: function(item) {
-    AppDispatcher.dispatch({
-      type: ClinicConstants.UPDATE_SCREEN
-    });
-  },
-
+  
   selectAppointment: function(item) {
     AppDispatcher.dispatch({
       type: ClinicConstants.APPOINTMENT_SELECTED,

@@ -26,10 +26,28 @@ class Appointments extends Component {
   }
 
   componentDidMount() {
-    this.serverRequest = fetch('http://private-e81a7-lifelettersclinicapp.apiary-mock.com/appointments').then(function(response) {
+    this.serverRequest = fetch('http://private-7572c-dentistapp.apiary-mock.com/appointments').then(function(response) {
         return response.json();
       }).then(function(json) {
-        ClinicActions.updateAppointments(json);
+        let baseTime;
+
+        var updatedAppointments = json.map((item, index) => {
+            if (index === 0) {
+              baseTime = parseInt(item.time);
+              item.time = baseTime;
+            }
+            else {
+              item.time = baseTime + (15 * 60 * 1000);
+              baseTime = item.time;
+            }
+
+            item.timeFriendly = new Date(item.time).toLocaleTimeString('en-US', {hour: '2-digit', minute:'2-digit'});
+
+            return item;
+        });
+
+
+        ClinicActions.updateAppointments(updatedAppointments);
       }.bind(this)).catch(function(ex) {
         console.log('parsing failed', ex)
       });

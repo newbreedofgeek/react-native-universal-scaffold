@@ -26,7 +26,7 @@ export default function (props, state) {
           <span className='dob'>{props.item.dob}</span>
         </div>
         <div className='doctor'>{props.item.doctor}</div>
-        <div className='appointment-time'>{props.item.time}</div>
+        <div className='appointment-time'>{props.item.timeFriendly}</div>
       </div>
     );
 }

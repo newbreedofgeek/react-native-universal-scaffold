@@ -8,7 +8,7 @@ import Appointment from './Appointment';
 export default function (props, state) {
   return (
     <div className='appointments'>
-      <div className='header'> Select a patient</div>
+      <div className='header'> Dentist Office - Please select a Patient</div>
       <div className='table'>
         <div className='appointment-header'>
           <div className='pic'></div>

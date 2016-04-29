@@ -10,7 +10,7 @@ var _appViewStates = {
   'SPLASH': 0,
   'APPOINTMENTS': 1
 };
-var _activeAppViewState = _appViewStates.SPLASH;
+var _activeAppViewState = _appViewStates.APPOINTMENTS;
 var _appointmentActiveFor = {};
 var _clinicAppointments = [];
 
@@ -111,10 +111,6 @@ var ClinicStore = assign({}, EventEmitter.prototype, {
 ClinicStore.dispatchToken = AppDispatcher.register(function(action) {
 
   switch(action.type) {
-    case ClinicConstants.UPDATE_SCREEN:
-      _activeAppViewState = _appViewStates.APPOINTMENTS;
-      ClinicStore.emitChange();
-      break;
     case ClinicConstants.APPOINTMENT_SELECTED:
       var item = action.item;
       _appointmentActiveFor = item;

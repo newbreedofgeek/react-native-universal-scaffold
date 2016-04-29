@@ -3,31 +3,6 @@ html, body {
   background: white;
 }
 
-.splash {
-  background-color: #333;
-  color: #e6e6e6;
-  font-size: 30px;
-  padding: 100px 5px;
-  text-align: center;
-  font-weight: lighter;
-  height: 1280px;
-}
-
-.splash img {
-  width: 400px;
-}
-
-.splash .title {
-  margin-top: -25px;
-}
-
-.splash .loading {
-  font-size: 20px;
-  margin-left: -43px;
-  opacity: .5;
-  margin-top: 10px;
-}
-
 .appointments {
   padding: 30px 10px;
   color: #333;
@@ -100,9 +75,9 @@ html, body {
 }
 
 .appointments .row.selected {
-  color: red;
+  background-color: #CCC;
 }
 
 .appointments .row:hover {
-  color: #58c9e9;
+  color: blue;
 }

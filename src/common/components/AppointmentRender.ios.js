@@ -27,7 +27,7 @@ export default function () {
         <Text style={styles.doctor}>{this.props.doctor}</Text>
       </View>
       <View>
-        <Text style={styles.time}>{this.props.time}</Text>
+        <Text style={styles.time}>{this.props.timeFriendly}</Text>
       </View>
     </View>
   );
