@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">55.88% </span>
+        <span class="strong">54.84% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>19/34</span>
+        <span class='fraction'>17/31</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">37.5% </span>
+        <span class="strong">42.86% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>3/8</span>
+        <span class='fraction'>3/7</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">37.5% </span>
+        <span class="strong">12.5% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>3/8</span>
+        <span class='fraction'>1/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">48.28% </span>
+        <span class="strong">46.15% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>14/29</span>
+        <span class='fraction'>12/26</span>
       </div>
     </div>
   </div>
@@ -171,11 +171,7 @@
 126
 127
 128
-129
-130
-131
-132
-133</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+129</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-yes">1×</span>
@@ -268,10 +264,10 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -287,10 +283,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -319,7 +311,7 @@ var _appViewStates = {
   'SPLASH': 0,
   'APPOINTMENTS': 1
 };
-var _activeAppViewState = _appViewStates.SPLASH;
+var _activeAppViewState = _appViewStates.APPOINTMENTS;
 var _appointmentActiveFor = {};
 var _clinicAppointments = [];
 &nbsp;
@@ -399,11 +391,11 @@ var ClinicStore = assign({}, EventEmitter.prototype, {
   getAppViewState: <span class="fstat-no" title="function not covered" >function() {</span>
 <span class="cstat-no" title="statement not covered" >    return _activeAppViewState;</span>
   },
-  getActiveAppointment: function() {
-    return _appointmentActiveFor;
+  getActiveAppointment: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    return _appointmentActiveFor;</span>
   },
-  getClinicAppointments: function() {
-    return _clinicAppointments;
+  getClinicAppointments: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    return _clinicAppointments;</span>
   },
   emitChange: <span class="fstat-no" title="function not covered" >function() {</span>
 <span class="cstat-no" title="statement not covered" >    this.emit(CHANGE_EVENT);</span>
@@ -420,10 +412,6 @@ var ClinicStore = assign({}, EventEmitter.prototype, {
 ClinicStore.dispatchToken = AppDispatcher.register(function(action) {<span class="fstat-no" title="function not covered" ></span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >  switch(action.type) {</span>
-    case ClinicConstants.UPDATE_SCREEN:
-<span class="cstat-no" title="statement not covered" >      _activeAppViewState = _appViewStates.APPOINTMENTS;</span>
-<span class="cstat-no" title="statement not covered" >      ClinicStore.emitChange();</span>
-<span class="cstat-no" title="statement not covered" >      break;</span>
     case ClinicConstants.APPOINTMENT_SELECTED:
 <span class="cstat-no" title="statement not covered" >      var item = action.item;</span>
 <span class="cstat-no" title="statement not covered" >      _appointmentActiveFor = item;</span>
@@ -445,7 +433,7 @@ module.exports = ClinicStore;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Apr 19 2016 16:53:15 GMT+1000 (AEST)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon May 09 2016 11:16:26 GMT+1000 (AEST)
 </div>
 </div>
 <script src="../prettify.js"></script>

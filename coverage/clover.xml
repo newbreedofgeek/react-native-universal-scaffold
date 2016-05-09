@@ -1,38 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1461048795665" clover="3.2.0">
-	<project timestamp="1461048795665"  name="All Files" >
-		<metrics statements="60"  coveredstatements="28"  conditionals="20"  coveredconditionals="11"  methods="23"  coveredmethods="6"  elements="103"  coveredelements="45"  complexity="0"  packages="4"  files="4"  classes="4"  loc="232"  ncloc="232" />
+<coverage generated="1462756650797" clover="3.2.0">
+	<project timestamp="1462756650797"  name="All Files" >
+		<metrics statements="30"  coveredstatements="14"  conditionals="12"  coveredconditionals="9"  methods="14"  coveredmethods="3"  elements="56"  coveredelements="26"  complexity="0"  packages="3"  files="3"  classes="3"  loc="95"  ncloc="95" />
 		<package name="actions" >
-			<metrics statements="7"  coveredstatements="4"  conditionals="4"  coveredconditionals="2"  methods="4"  coveredmethods="1" />
-			<file name="ClinicActions.js"  path="/Users/markpaul/Documents/projects/clinic-app/src/common/actions/ClinicActions.js" >
-				<metrics statements="7"  coveredstatements="4"  conditionals="4"  coveredconditionals="2"  methods="4"  coveredmethods="1" />
-				<line num="3"  count="1"  type="stmt" />
-				<line num="4"  count="2"  type="cond"  truecount="2"  falsecount="2" />
-				<line num="6"  count="1"  type="stmt" />
-				<line num="8"  count="0"  type="stmt" />
-				<line num="14"  count="0"  type="stmt" />
-				<line num="21"  count="0"  type="stmt" />
-				<line num="29"  count="1"  type="stmt" />
+			<metrics statements="6"  coveredstatements="4"  conditionals="4"  coveredconditionals="3"  methods="3"  coveredmethods="1" />
+			<file name="ClinicActions.js"  path="/Users/markpaul/Documents/software/react-native-universal-scaffold/src/common/actions/ClinicActions.js" >
+				<metrics statements="6"  coveredstatements="4"  conditionals="4"  coveredconditionals="3"  methods="3"  coveredmethods="1" />
+				<line num="3"  count="3"  type="stmt" />
+				<line num="4"  count="6"  type="cond"  truecount="3"  falsecount="1" />
+				<line num="6"  count="3"  type="stmt" />
+				<line num="9"  count="0"  type="stmt" />
+				<line num="16"  count="0"  type="stmt" />
+				<line num="24"  count="3"  type="stmt" />
 			</file>
 		</package>
 		<package name="constants" >
 			<metrics statements="2"  coveredstatements="2"  conditionals="4"  coveredconditionals="3"  methods="1"  coveredmethods="1" />
-			<file name="ClinicConstants.js"  path="/Users/markpaul/Documents/projects/clinic-app/src/common/constants/ClinicConstants.js" >
+			<file name="ClinicConstants.js"  path="/Users/markpaul/Documents/software/react-native-universal-scaffold/src/common/constants/ClinicConstants.js" >
 				<metrics statements="2"  coveredstatements="2"  conditionals="4"  coveredconditionals="3"  methods="1"  coveredmethods="1" />
-				<line num="3"  count="2"  type="cond"  truecount="3"  falsecount="1" />
-				<line num="5"  count="2"  type="stmt" />
+				<line num="3"  count="3"  type="cond"  truecount="3"  falsecount="1" />
+				<line num="5"  count="3"  type="stmt" />
 			</file>
 		</package>
 		<package name="dispatcher" >
 			<metrics statements="22"  coveredstatements="8"  conditionals="4"  coveredconditionals="3"  methods="10"  coveredmethods="1" />
-			<file name="AppDispatcher.js"  path="/Users/markpaul/Documents/projects/clinic-app/src/common/dispatcher/AppDispatcher.js" >
+			<file name="AppDispatcher.js"  path="/Users/markpaul/Documents/software/react-native-universal-scaffold/src/common/dispatcher/AppDispatcher.js" >
 				<metrics statements="22"  coveredstatements="8"  conditionals="4"  coveredconditionals="3"  methods="10"  coveredmethods="1" />
-				<line num="3"  count="2"  type="stmt" />
-				<line num="4"  count="2"  type="cond"  truecount="3"  falsecount="1" />
-				<line num="6"  count="2"  type="stmt" />
-				<line num="7"  count="2"  type="stmt" />
-				<line num="9"  count="2"  type="stmt" />
-				<line num="10"  count="2"  type="stmt" />
+				<line num="3"  count="3"  type="stmt" />
+				<line num="4"  count="3"  type="cond"  truecount="3"  falsecount="1" />
+				<line num="6"  count="3"  type="stmt" />
+				<line num="7"  count="3"  type="stmt" />
+				<line num="9"  count="3"  type="stmt" />
+				<line num="10"  count="3"  type="stmt" />
 				<line num="18"  count="0"  type="stmt" />
 				<line num="19"  count="0"  type="stmt" />
 				<line num="28"  count="0"  type="stmt" />
@@ -46,44 +45,9 @@
 				<line num="41"  count="0"  type="stmt" />
 				<line num="43"  count="0"  type="stmt" />
 				<line num="46"  count="0"  type="stmt" />
-				<line num="50"  count="2"  type="stmt" />
+				<line num="50"  count="3"  type="stmt" />
 				<line num="58"  count="0"  type="stmt" />
-				<line num="66"  count="2"  type="stmt" />
-			</file>
-		</package>
-		<package name="stores" >
-			<metrics statements="29"  coveredstatements="14"  conditionals="8"  coveredconditionals="3"  methods="8"  coveredmethods="3" />
-			<file name="ClinicStore.js"  path="/Users/markpaul/Documents/projects/clinic-app/src/common/stores/ClinicStore.js" >
-				<metrics statements="29"  coveredstatements="14"  conditionals="8"  coveredconditionals="3"  methods="8"  coveredmethods="3" />
-				<line num="3"  count="1"  type="stmt" />
-				<line num="4"  count="1"  type="stmt" />
-				<line num="5"  count="1"  type="stmt" />
-				<line num="6"  count="3"  type="cond"  truecount="3"  falsecount="1" />
-				<line num="8"  count="1"  type="stmt" />
-				<line num="9"  count="1"  type="stmt" />
-				<line num="13"  count="1"  type="stmt" />
-				<line num="14"  count="1"  type="stmt" />
-				<line num="15"  count="1"  type="stmt" />
-				<line num="89"  count="1"  type="stmt" />
-				<line num="91"  count="0"  type="stmt" />
-				<line num="94"  count="1"  type="stmt" />
-				<line num="97"  count="1"  type="stmt" />
-				<line num="100"  count="0"  type="stmt" />
-				<line num="104"  count="0"  type="stmt" />
-				<line num="107"  count="0"  type="stmt" />
-				<line num="111"  count="1"  type="stmt" />
-				<line num="113"  count="0"  type="cond"  truecount="0"  falsecount="4" />
-				<line num="115"  count="0"  type="stmt" />
-				<line num="116"  count="0"  type="stmt" />
-				<line num="117"  count="0"  type="stmt" />
-				<line num="119"  count="0"  type="stmt" />
-				<line num="120"  count="0"  type="stmt" />
-				<line num="121"  count="0"  type="stmt" />
-				<line num="122"  count="0"  type="stmt" />
-				<line num="124"  count="0"  type="stmt" />
-				<line num="125"  count="0"  type="stmt" />
-				<line num="126"  count="0"  type="stmt" />
-				<line num="132"  count="1"  type="stmt" />
+				<line num="66"  count="3"  type="stmt" />
 			</file>
 		</package>
 	</project>
